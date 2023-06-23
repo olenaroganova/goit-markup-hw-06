@@ -1,0 +1,64 @@
+@media screen and (min-width: 428px) {
+  .container {
+    max-width: 428px;
+  }
+
+  .advantages-item {
+    max-width: 396px;
+  }
+}
+
+/* -------------TABLET----------- */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .advantages {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .advantages-list {
+    gap: 24px;
+  }
+
+  .advantages-item {
+    max-width: unset;
+    width: calc((100% - 24px) / 2);
+  }
+
+  .ourteam {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .people {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+/* ------------------------DESKTOP------------- */
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+
+  .advantages-list {
+    gap: 24px;
+  }
+
+  .advantages-item {
+    width: calc((100% - 72px) / 4);
+    gap: 24px;
+  }
+
+  .ourteam {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .people {
+    width: calc((100% - 72px) / 4);
+  }
+}

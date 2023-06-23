@@ -232,16 +232,19 @@ img {
 
 /* -----------------Advantages------------ */
 .advantages {
-  padding: 120px 0;
+  /* padding: 120px 0; */
+  padding: 96px 16px;
 }
 
 .advantages-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+
+  gap: 72px;
 }
 
 .advantages-item {
-  width: calc((100% - 72px) / 4);
+  width: 100%;
 }
 
 .advantages-subtitle {
@@ -267,6 +270,7 @@ img {
   background-color: var(--bcg-pink);
   border-radius: 4px;
   margin-bottom: 8px;
+  display: none;
 }
 
 /* ----------------------What are we doing----------- */
@@ -299,7 +303,8 @@ img {
 /* ----------------Our team---------------------- */
 .ourteam {
   background-color: var(--bcg-pink);
-  padding: 120px 0;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .ourteam-title {
@@ -315,12 +320,13 @@ img {
 
 .ourteam-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
 .people {
   background-color: var(--color-white);
-  width: calc((100% - 72px) / 4);
+  width: 100%;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
