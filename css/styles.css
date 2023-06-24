@@ -321,7 +321,9 @@ img {
 .ourteam-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 72px 82px;
+  padding-left: 82px;
+  padding-right: 82px;
 }
 
 .people {
