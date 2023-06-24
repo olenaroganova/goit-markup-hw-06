@@ -28,13 +28,20 @@
     width: calc((100% - 24px) / 2);
   }
 
-  .ourteam {
-    padding-top: 96px;
-    padding-bottom: 96px;
-  }
-
   .people {
     width: calc((100% - 24px) / 2);
+  }
+
+  .ourteam-list {
+    gap: 64px 24px;
+  }
+
+  .customers-list {
+    gap: 24px;
+  }
+
+  .customers-item {
+    width: calc((100% - 48px) / 3);
   }
 }
 
@@ -64,5 +71,19 @@
 
   .people {
     width: calc((100% - 72px) / 4);
+  }
+
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .customers-list {
+    gap: 24px;
+  }
+
+  .customers-item {
+    width: calc((100% - 120px) / 6);
+    height: 88px;
   }
 }

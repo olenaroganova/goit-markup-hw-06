@@ -307,6 +307,10 @@ img {
   padding-bottom: 96px;
 }
 
+.ourteam-container {
+  max-width: 296px;
+}
+
 .ourteam-title {
   font-weight: 700;
   font-size: 36px;
@@ -322,8 +326,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 72px 82px;
-  padding-left: 82px;
-  padding-right: 82px;
 }
 
 .people {
@@ -391,8 +393,8 @@ img {
 
 /* ------------------Customers------------ */
 .customers {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .customers-title {
@@ -408,11 +410,12 @@ img {
 
 .customers-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .customers-item {
-  width: calc((100% - 120px) / 6);
+  width: calc((100% - 16px) / 2);
   height: 88px;
 }
 
