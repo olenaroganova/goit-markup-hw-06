@@ -52,6 +52,8 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -176,7 +178,7 @@ img {
 
 /* ---------------Hero------------- */
 .hero {
-  padding: 188px 0;
+  padding: 112px 0;
   background-color: var(--main-color);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -194,12 +196,12 @@ img {
 .hero-title {
   color: var(--color-white);
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   text-align: center;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.72px;
   max-width: 496px;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
   margin-right: auto;
   margin-left: auto;
 }
