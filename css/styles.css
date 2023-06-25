@@ -26,8 +26,8 @@ body {
 .container {
   max-width: 1158px;
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
 }
 
@@ -96,84 +96,15 @@ img {
   text-transform: uppercase;
   color: var(--bcg-btn-main);
   text-decoration: none;
-  margin-right: 76px;
   padding: 24px 0;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-}
-.link {
-  text-decoration: none;
-}
-
-.content {
-  color: var(--bcg-btn-active);
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--main-color);
-  padding: 24px 0;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-}
-
-.current {
-  color: var(--bcg-btn-active);
-}
-
-.current::after {
-  display: block;
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  height: 4px;
-  width: 100%;
-  background-color: var(--bcg-btn-active);
-  border-radius: 2px;
 }
 
 .header-list {
-  display: flex;
-  gap: 40px;
-}
-
-.content:hover,
-.content:focus {
-  color: var(--color-active);
+  display: none;
 }
 
 .address {
-  font-style: normal;
-}
-
-.address-list {
-  display: flex;
-  gap: 40px;
-  padding: 24px 0;
-}
-
-.address-link {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--second-color);
-  text-decoration: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.address-link:hover,
-.address-link:focus {
-  color: var(--color-active);
+  display: none;
 }
 
 /* ---------------Hero------------- */
@@ -191,6 +122,18 @@ img {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/img-name-mob-2x.jpg);
+  }
 }
 
 .hero-title {
