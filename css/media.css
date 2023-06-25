@@ -15,8 +15,8 @@
   }
 
   .header-container {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
   }
 
@@ -85,8 +85,7 @@
 
   .address-list {
     display: flex;
-    flex-wrap: wrap;
-
+    flex-direction: column;
     gap: 12px;
     padding: 16px 0;
   }
@@ -178,7 +177,8 @@
   }
 
   .header-container {
-    padding: 24px 156px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .header .logo {
@@ -242,6 +242,7 @@
   .address-list {
     display: flex;
     flex-wrap: nowrap;
+    flex-direction: row;
     gap: 40px;
     padding: 24px 0;
   }
