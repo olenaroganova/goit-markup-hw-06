@@ -75,7 +75,7 @@
 
   .address {
     display: flex;
-
+    margin-left: auto;
     font-style: normal;
   }
 
@@ -177,6 +177,10 @@
     max-width: 1158px;
   }
 
+  .header-container {
+    padding: 24px 156px;
+  }
+
   .header .logo {
     margin-right: 76px;
   }
@@ -237,6 +241,7 @@
 
   .address-list {
     display: flex;
+    flex-wrap: nowrap;
     gap: 40px;
     padding: 24px 0;
   }
