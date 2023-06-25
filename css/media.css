@@ -109,6 +109,10 @@
     color: var(--color-active);
   }
 
+  .icon-btn {
+    display: none;
+  }
+
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -252,6 +256,10 @@
   .address-link:hover,
   .address-link:focus {
     color: var(--color-active);
+  }
+
+  .icon-btn {
+    display: none;
   }
 
   .hero {
