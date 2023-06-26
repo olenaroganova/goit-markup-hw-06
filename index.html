@@ -58,14 +58,18 @@
           </ul>
         </address>
 
-        <button type="button" class="icon-btn" js-open-menu>
-          <svg width="32" height="22" class="icon-mob-btn">
-            <use href="./images/icons.svg#icon-mob-btn"></use>
-          </svg>
-        </button>
+        <!-- ----------------MOBILE MENU--------------- -->
+
+        <div>
+          <button type="button" class="icon-btn" js-open-menu>
+            <svg width="32" height="22" class="icon-mob-btn">
+              <use href="./images/icons.svg#icon-mob-btn"></use>
+            </svg>
+          </button>
+        </div>
       </div>
 
-      <div class="mob-menu">
+      <div class="mob-menu is-hidden" js-menu-container>
         <div>
           <button type="button" class="menu-close-btn" js-close-menu>
             <svg width="8" height="8" class="menu-close">
@@ -85,73 +89,75 @@
           </ul>
         </div>
 
-        <ul class="mob-address-list list">
-          <li class="mob-address-item">
-            <a class="mob-address-link link" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-          <li class="mob-address-item">
-            <a class="mob-address-link link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-        </ul>
+        <div>
+          <ul class="mob-address-list list">
+            <li class="mob-address-item">
+              <a class="mob-address-link link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mob-address-item">
+              <a class="mob-address-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
 
-        <ul class="mob-network">
-          <li class="mob-network-list">
-            <a
-              class="mob-network-link"
-              href=""
-              aria-label="instagram"
-              target="_blank"
-              rel="noopener no-referrer"
-            >
-              <svg class="mob-network-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-instagram1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="mob-network-list">
-            <a
-              class="mob-network-link"
-              href=""
-              aria-label="twitter"
-              target="_blank"
-              rel="noopener no-referrer"
-            >
-              <svg class="mob-network-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-twitter1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="mob-network-list">
-            <a
-              class="mob-network-link"
-              href=""
-              aria-label="facebook"
-              target="_blank"
-              rel="noopener no-referrer"
-            >
-              <svg class="mob-network-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-facebook1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="mob-network-list">
-            <a
-              class="mob-network-link"
-              href=""
-              aria-label="linkedin"
-              target="_blank"
-              rel="noopener no-referrer"
-            >
-              <svg class="mob-network-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-linkedin1"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+          <ul class="mob-network">
+            <li class="mob-network-list">
+              <a
+                class="mob-network-link"
+                href=""
+                aria-label="instagram"
+                target="_blank"
+                rel="noopener no-referrer"
+              >
+                <svg class="mob-network-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-network-list">
+              <a
+                class="mob-network-link"
+                href=""
+                aria-label="twitter"
+                target="_blank"
+                rel="noopener no-referrer"
+              >
+                <svg class="mob-network-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-network-list">
+              <a
+                class="mob-network-link"
+                href=""
+                aria-label="facebook"
+                target="_blank"
+                rel="noopener no-referrer"
+              >
+                <svg class="mob-network-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-network-list">
+              <a
+                class="mob-network-link"
+                href=""
+                aria-label="linkedin"
+                target="_blank"
+                rel="noopener no-referrer"
+              >
+                <svg class="mob-network-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -748,6 +754,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
