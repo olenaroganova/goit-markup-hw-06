@@ -85,8 +85,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24 16px 0 16px;
-  width: 100%;
+  padding: 24px 16px 24px 16px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -159,8 +158,8 @@ img {
 
 .mob-menu {
   position: fixed;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   background-color: var(--color-white);
   top: 0;
   z-index: 2;
@@ -169,9 +168,13 @@ img {
   flex-direction: column;
   justify-content: space-between;
   overflow: auto;
+  width: 100%;
+  max-width: 360px;
 }
 
 .menu-close {
+  position: absolute;
+  margin-left: auto;
 }
 .mob-list {
   margin-bottom: 50px;
@@ -203,11 +206,30 @@ img {
 .mob-address-item:not(:last-child) {
   margin-bottom: 40px;
 }
+.tel {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.adr {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  color: var(--second-color);
+}
+
 .mob-address-link {
+  text-decoration: none;
 }
 .mob-network {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  justify-content: center;
   gap: 56px;
   margin-top: 48px;
 }
@@ -215,8 +237,26 @@ img {
   width: ((100% - 168px) / 4);
 }
 .mob-network-link {
+  background-color: var(--bcg-btn-main);
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .mob-network-icon {
+  fill: var(--bcg-pink);
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+}
+
+.mob-network-link:hover,
+.mob-network-link:focus {
+  background-color: var(--bcg-btn-active);
 }
 
 /* ---------------Hero------------- */
@@ -305,17 +345,20 @@ img {
 }
 
 .advantages-subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
   color: var(--main-color);
   margin-bottom: 8px;
+  text-transform: capitalize;
+  text-align: center;
 }
 
 .advantages-text {
   line-height: 1.5;
-  letter-spacing: 0.02em;
+  font-weight: 500;
+  letter-spacing: 0.32px;
   color: var(--second-color);
 }
 
@@ -332,6 +375,7 @@ img {
 
 /* ----------------------What are we doing----------- */
 .what {
+  display: none;
   padding-bottom: 120px;
 }
 
@@ -402,7 +446,7 @@ img {
   font-size: 20px;
   line-height: 1.2;
   text-align: center;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.4px;
   color: var(--main-color);
   text-align: center;
   margin-bottom: 8px;
@@ -411,7 +455,7 @@ img {
 .ourteam-text {
   line-height: 1.5;
   text-align: center;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.32px;
   color: var(--second-color);
   text-align: center;
   margin-bottom: 8px;
@@ -421,6 +465,8 @@ img {
   display: flex;
   justify-content: center;
   gap: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .network-list {
@@ -461,7 +507,7 @@ img {
   color: var(--main-color);
   margin-bottom: 72px;
   text-align: center;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.72px;
   text-transform: capitalize;
 }
 
@@ -509,15 +555,16 @@ img {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 0 auto;
-
   row-gap: 72px;
+  width: 100%;
 }
 
 .footer-div-logo {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .footer-logo {
@@ -551,6 +598,15 @@ img {
   margin-right: auto;
 }
 
+.footer-social-media {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .social-media-text {
   font-weight: 500;
   font-size: 16px;
@@ -558,6 +614,8 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-white);
   margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-list {
@@ -592,11 +650,21 @@ img {
 
 /* ----------Subscribe------- */
 .footer-subscribe {
-  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 .form-subscribe {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
 }
 
 .subscribe-text {
@@ -606,8 +674,11 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-white);
   margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .subscribe-label {
+  width: 100%;
 }
 
 .icon-subscribe {
@@ -616,19 +687,22 @@ img {
 }
 
 .subscribe-input {
-  width: 264px;
+  display: flex;
+  min-width: 398px;
   height: 40px;
   border: 1px solid var(--color-white);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
-  padding-left: 16px;
-  margin-right: 24px;
   color: var(--color-white);
   font-size: 12px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
+  line-height: 2;
+  letter-spacing: 0.48px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  padding: 8px 16px;
 }
 
 .subscribe-input::placeholder {
@@ -636,7 +710,9 @@ img {
 }
 
 .subscribe-btn {
-  min-width: 165px;
+  max-width: 165px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
