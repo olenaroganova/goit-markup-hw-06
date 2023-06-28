@@ -222,6 +222,10 @@
     margin-left: 24px;
   }
 
+  .modal {
+    max-width: 408px;
+  }
+
   /* ------------------------DESKTOP------------- */
   @media screen and (min-width: 1158px) {
     .container {
@@ -421,8 +425,6 @@
       flex-wrap: nowrap;
       align-items: baseline;
       justify-content: space-between;
-      margin-right: auto;
-      margin-left: auto;
     }
 
     .footer-div-logo {
@@ -431,6 +433,14 @@
 
     .footer-subscribe {
       align-items: start;
+    }
+
+    .footer-social-media {
+      margin-right: 80px;
+    }
+
+    .modal {
+      max-width: 408px;
     }
   }
 }
