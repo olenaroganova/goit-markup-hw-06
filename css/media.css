@@ -325,7 +325,7 @@
     }
 
     .hero {
-      padding-top: 188px 0;
+      padding: 188px 0;
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
@@ -352,6 +352,22 @@
       letter-spacing: 1.12px;
     }
 
+    .advantages {
+      padding-top: 120px;
+      padding-bottom: 0;
+    }
+
+    .advantages-subtitle {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: 0.4px;
+    }
+
+    .advantages-text {
+      font-weight: 400;
+    }
+
     .advantages-list {
       gap: 24px;
     }
@@ -363,6 +379,14 @@
 
     .advantages-icon {
       display: flex;
+    }
+
+    .what {
+      display: unset;
+    }
+
+    .what-div {
+      padding: 120px 0;
     }
 
     .ourteam {
@@ -394,6 +418,7 @@
 
     .footer-div {
       flex-direction: row;
+      flex-wrap: nowrap;
       align-items: baseline;
       justify-content: space-between;
       margin-right: auto;
@@ -402,6 +427,10 @@
 
     .footer-div-logo {
       margin-right: 120px;
+    }
+
+    .footer-subscribe {
+      align-items: start;
     }
   }
 }
