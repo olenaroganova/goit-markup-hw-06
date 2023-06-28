@@ -164,12 +164,12 @@
     width: calc((100% - 24px) / 2);
   }
 
-  .people {
-    width: calc((100% - 24px) / 2);
-  }
-
   .ourteam-list {
     gap: 64px 24px;
+  }
+
+  .customers-div {
+    width: 552px;
   }
 
   .customers-list {
@@ -182,7 +182,6 @@
 
   .footer-div {
     flex-direction: row;
-
     gap: 74px 24px;
     justify-content: center;
   }
@@ -206,11 +205,12 @@
 
   .form-subscribe {
     flex-direction: row;
-    justify-content: flex-start;
   }
 
   .footer-subscribe {
-    align-items: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
   }
 
   .subscribe-input {
@@ -441,6 +441,9 @@
 
     .modal {
       max-width: 408px;
+    }
+    .subscribe-btn {
+      margin-left: 0;
     }
   }
 }
