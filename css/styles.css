@@ -498,8 +498,7 @@ img {
 
 /* ------------------Customers------------ */
 .customers {
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding: 96px 0;
 }
 
 .customers-title {
@@ -664,8 +663,6 @@ img {
   display: flex;
   flex-direction: column;
   gap: 16px;
-
-  justify-content: center;
 }
 
 .subscribe-text {
@@ -675,6 +672,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-white);
   margin-bottom: 16px;
+  text-align: center;
 }
 .subscribe-label {
   width: 100%;
